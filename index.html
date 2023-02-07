@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrapHw</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            scroll-padding-top: 3rem;
+        }
+
+        * {
+            /* font-size: large; */
+            font-family: '標楷體';
+        }
+
+        body {
+            background: black;
+            padding-top: 60px;
+            /* margin-top: 100px; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">認識鹿港</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <!-- <a href="#area-01" class="nav-link">認識鹿港</a> -->
+                        </li>
+                        <li class="nav-item">
+                            <a href="#area-02" class="nav-link">鹿港簡介</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#area-03" class="nav-link">景點介紹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#area-04" class="nav-link">特產介紹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#area-05" class="nav-link">area-05</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- area-01 -->
+    <div id="area-01" class="carousel slide carousel-fade bg-dark" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#area-01" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#area-01" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#area-01" data-bs-slide-to="2"></button>
+        </div> -->
+        <div class="carousel-inner img-fluid" style="height: 550px">
+            <div class="carousel-item active h-100" style="background: url(./img/carousel-1.jpg);background-size:cover">
+            </div>
+            <div class="carousel-item h-100" style="background: url(./img/carousel-2.jpg);background-size:cover"></div>
+            <div class="carousel-item h-100" style="background: url(./img/carousel-3.jpg);background-size:cover"> </div>
+        </div>
+        <!-- area-02 -->
+        <div class="container">
+            <nav class="nav nav-tabs flex-nowrap justify-content-around bg-dark mt-3" id="area-02">
+                <button class="nav-link active text-muted" data-bs-toggle="tab" data-bs-target="#nav-1" type="button">
+                    <h4>鹿港簡介</h4>
+                </button>
+                <button class="nav-link text-muted" data-bs-toggle="tab" data-bs-target="#nav-2" type="button">
+                    <h4>『四說』</h4>
+                </button>
+                <button class="nav-link text-muted" data-bs-toggle="tab" data-bs-target="#nav-3" type="button">
+                    <h4>『三不見』</h4>
+                </button>
+                <button class="nav-link text-muted" data-bs-toggle="tab" data-bs-target="#nav-4" type="button">
+                    <h4>『三多』</h4>
+                </button>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active text-white" id="nav-1">
+                    <p class="lh-lg p-3">
+                        　　鹿港位於台灣西海岸的中點，清治時期以前，港闊水深，距離中國大陸沿岸最近，因此自然成為一個繁榮的商業港口城市。1785年至1845年之間是鹿港的全盛時期，在當時是僅次於府城臺南的全島第二大城，所謂的「一府二鹿三艋舺」其中的二鹿就是指鹿港。
+                        <br>
+                        　　後來因港口的泥沙淤積，加上縱貫線鐵路未經過此地，此後鹿港迅速沒落，但沒落反而意外保留更多古老建築。
+                </div>
+                <div class="tab-pane fade text-white" id="nav-2">
+                    <p class="lh-lg p-3">
+                        <strong>「鹿港」或「鹿仔港」地名來源四說</strong><br>
+                        一說；臺灣中部一帶昔時多鹿，常有鹿群聚集海口草埔，故名「鹿仔港」，後來簡稱「鹿港」。臺灣西部平原，從荷蘭時期到清領時期，鹿群遍佈，那時有不少從事鹿皮、鹿脯的買賣者。當漢人從鹿港上岸之後，很可能看到海港附近有鹿群，於是稱之為「鹿仔港」。而「仔」字又是漢人慣用字眼，至今仍有地名曰「崙仔頂」、「橋仔頭」等。
+                        <br>
+                        二說；鹿港一帶早年為平埔番巴布薩族 (Babuza) 盤據之地，平埔族 Rokau-an 一語的轉譯。
+                        <br>
+                        三說；地形似鹿，故名「鹿仔港」。
+                        <br>
+                        四說；據說昔日這個地方是米穀集散地，因為用來儲存稻穀的方形倉庠稱為「鹿」而得名。根據鹿港鎮公所編印的「地名釋義」：「雍正6 年彰化縣設立倉庠於鹿仔港米市街西畔，門首有匾曰：天庾正供
+                        (彰化縣誌道光版載有此事，計得倉庠一十六間)
+                        ，因廩之方者曰鹿，竊以此命名曰鹿仔港。」在清領時期福建一帶，確實有「鹿港米」的專有名詞流傳，鹿港也有一條街叫做「米市街」，今名「美市街」，可知鹿港為米穀集散地之事不假。
+                </div>
+                <div class="tab-pane fade text-white" id="nav-3">
+                    <p class="lh-lg p-3">
+                        <strong>以前的鹿港有所謂的『三不見』</strong><br>
+                        一不見；看不見天：商店生意興隆，為了終年可遮風避雨，街道兩旁都往路中央搭上棚子，最後連接起來形成不見天街。即現在的中山路。
+                        <br>
+                        二不見；看不見地：是因為古昔鹿港各大街小巷街面皆鋪紅磚或唐山石，故不見地。另有一說由於各寺廟時常辦理各項慶典，施放鞭炮造成地上都是鞭炮屑，因而看不見地面。
+                        <br>
+                        三不見；看不見女人：是因早期鹿港民風保守，婦人不能隨便外出，故街上很難見到女人，都待在閨房或於屋頂上交誼。
+                </div>
+                <div class="tab-pane fade text-white" id="nav-4">
+                    <p class="lh-lg p-3">
+                        <strong>現在的鹿港有『三多』</strong><br>
+                        一多；古蹟多：遺留很多清代及日治時期的廟宇、建築與老街等古蹟。<br>
+                        二多；小吃多：許多傳統小吃由於觀光人潮多，也就興盛起來了。<br>
+                        三多；人文匠師多：教育部民族藝術薪傳獎工藝類獲獎者共36人，其中鹿港地區佔有6人，種傳統工藝如：木雕、錫藝、燈藝、金雕、陶藝、捏麵人等，在鹿港都可以找到大師級的工藝匠師。
+                </div>
+            </div>
+            <!-- area-03 -->
+            <article class="container" id="area-03">
+                <ul class="row list-unstyled">
+                    <li class="col-12">
+                        <div class="row pb-2">
+                            <img class="col-md-4 p-4" src="/img/img1.jpg" alt="">
+                            <div class="col pt-3">
+                                <h4 class="text-white">天后宮</h4>
+                                <p class="pb-1 border-bottom border-warning lh-lg">
+                                    <mark>　　鹿港天后宮俗稱『舊祖宮』，建於明朝末年，因為媽祖威靈顯赫，信徒日增，於雍正3年（西元1725年），由水師提督靖海侯施琅將軍之侄施世榜獻地遷建於現址。天后宮是鹿港人民信仰的中心，媽祖生日更是無法形容，全臺各地信徒更紛紛前來進香，宮中一年四季香煙不斷，真教人體會出宮廟香火鼎盛，這就是鹿港寶殿天后宮的盛況。
+                                        <br>
+                                        　　鹿港龍山寺的創建年代很早，根據民間相傳是在明末永曆七年（西元1653年），由肇善禪師創建。相傳肇善乃福建泉州的苦行僧，他親自雕刻了一尊觀音像，想獻往普陀山。卻在海上遇到狂風暴雨，因緣巧合下來到鹿港。肇善便在鹿港結廬苦修，並且在今日的大有街一帶建立一座廟，此廟便是龍山寺的前身。乾隆51年（1786）武官陳邦光倡議遷建，士紳林振嵩、許樂三主持遷建工程至現址。
+                            </div>
+                    </li>
+                    <li class="col-12">
+                        <div class="row pb-2">
+                            <img class="col-md-4 p-4" src="./img/img2.jpg" alt="">
+                            <div class="col pt-3">
+                                <h4 class="text-white">老街</h4>
+                                <p class="pb-1 border-bottom border-warning lh-lg">
+                                    <mark>　　不見天街是因為道路被雨棚蓋住，看不到天空而得名。鹿港「不見天街」為今日的中山路，清代稱為五福大街，分別為長興街、泰興街、和興街、福興街與順興街。為讓來此消費的買客避免受到炎陽、雷雨及冬季九降風的侵襲，街道兩旁的商家共同搭起亭蓋遮棚，中間開有天窗採光，因此不論陰晴寒熱，走在五福大街中購物就不受天候的干擾，這就是全台獨一無二的『不見天』街。
+                                        <br>
+                                        　　但由於昭和八年（1933年）鹿港實施市區改正，強制拆除不見天街及兩旁商家，之後並將道路拓寬為十五公尺。市區改正後的五福街屋立面都重新改建，採用洗石子工法，塑造當時流行的『現代藝術裝飾式樣』，整體外觀顯得簡潔有力，成為目前中山老街特殊的風格。
+                            </div>
+                    </li>
+                    <li class="col-12">
+                        <div class="row">
+                            <img class="col-md-4 p-4" src="./img/img3.jpg" alt="">
+                            <div class="col pt-3">
+                                <h4 class="text-white">木雕</h4>
+                                <p class="pb-1 border-bottom border-warning lh-lg">
+                                    <mark>傳統建築運用大量木雕裝飾，尤其在鹿港各大古廟，每一座廟都有雕飾精美絕倫的木雕，因此造就鹿港成為傳統木工藝的重鎮。除了建築雕刻外，鹿港的木雕還包含佛像、佛具、供桌等祭祀木器與家具製作。
+                                        　　其中最著名的為人稱「松林師」的李松林藝師，出生於傳統木雕世家，清道光年間，其曾祖父李克鳩渡海來台參與鹿港龍山寺的整修工作，從此定居鹿港。松林師於1985年榮獲教育部第一屆民族藝術薪傳獎，1989年獲教育部評定為重要民族藝術藝師。而松林師之么兒李秉圭，更曾獲全球中華藝術薪傳獎。除此之外鹿港的吳清波（1987年榮獲教育部民族藝術薪傳獎）、施鎮洋（1992年榮獲教育部民族藝術薪傳獎）、施至輝（1994年榮獲教育部民族藝術薪傳獎）、黃媽慶等木雕師傅的作品也深受各界肯定。
+                            </div>
+                    </li>
+                </ul>
+            </article>
+            <!-- area-04 -->
+            <article id="area-04">
+                <div class="accordion" id="foodMenu">
+                    <div class="accordion-item bg-dark">
+                        <a class="accordion-header accordion-button text-white bg-dark border" data-bs-toggle="collapse"
+                            href="#foodTxt1">蚵仔煎</a>
+                        <div id="foodTxt1" class="accordion-collapse collapse show" data-bs-parent="#foodMenu">
+                            <div class="accordion-body text-white">
+                                <p><mark>蚵仔煎為一種著名的台灣小吃，是使用新鮮的蚵仔（牡蠣）、蔬菜（多用茼蒿或小白菜）、雞蛋及太白粉芡水作成。全省各地都有蚵仔煎，但是因為鹿港的地理優越位置，蚵仔（牡蠣）的品質特別好，加上店家用料又非常大方，料多味美又實在，所以很多人來鹿港第一個要吃的就是蚵仔煎。除了蚵仔煎之外還有蚵仔湯、蚵嗲，同樣會讓你讚不絕口。
+                                </p>
+                                <img class="d-block mx-auto" src="./img/a5-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark">
+                        <a class="accordion-header accordion-button collapsed text-white bg-dark border"
+                            data-bs-toggle="collapse" href="#foodTxt2">蝦猴</a>
+                        <div id="foodTxt2" class="accordion-collapse collapse" data-bs-parent="#foodMenu">
+                            <div class="accordion-body text-white">
+                                <p>蝦猴－又稱為「蝦蛄」，這是只有中部鹿港和台中才有的特有海鮮，是一道十分下酒的菜餚，每年清明節的前後是它的產卵期，也是品嚐的最佳時機。蝦猴不管用油炸的或者鹽漬當下酒菜的都相當的美味，位於天后宮及第一市場十字路口附近都有販售，不妨前往嚐嚐哦！鹿港的有句諺語說：一隻蝦猴配三碗粥。
+                                </p>
+                                <img class="d-block mx-auto" src="./img/a5-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark">
+                        <a class="accordion-header accordion-button collapsed text-white bg-dark border"
+                            data-bs-toggle="collapse" href="#foodTxt3">肉包</a>
+                        <div id="foodTxt3" class="accordion-collapse collapse" data-bs-parent="#foodMenu">
+                            <div class="accordion-body text-white">
+                                <p>鹿港的肉包可以說是從中山路上振味珍－阿振肉包開始出名的。阿振肉包的特色就是皮Q、餡多、肉好吃，選肉要選豬後腿，因為比較有嚼勁。肉包的皮一定要使用中筋麵粉，用酵母是進口酵母菌，大概發酵2小時，做到香、軟、Q，這是一個好肉包的必備條件。
+                                    　　目前有名的肉包店還有老龍師、巧味珍等店，每到假日大多大排長龍，深受各地遊客喜愛！</p>
+                                <img class="d-block mx-auto" src="./img/a5-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark">
+                        <a class="accordion-header accordion-button collapsed text-white bg-dark border"
+                            data-bs-toggle="collapse" href="#foodTxt4">鹿港茶點</a>
+                        <div id="foodTxt4" class="accordion-collapse collapse" data-bs-parent="#foodMenu">
+                            <div class="accordion-body text-white">
+                                <p>「富貴三代，方知飲食。」造就了鹿港人對飲食文化的講究，故有今日百年糕點。鹿港當時文風鼎盛，許多文人常聚在一起飲茶作詩，為了顯出獨特的風雅品味，特地從泉州請來手藝精良的糕餅師傅製作各式美味的茶食糕點，招待這些文人。
+                                    　　著名的茶點有：牛舌餅、綠豆糕、鳳眼糕、豬油荖（分為米荖、麻荖、花生荖三種）、麵茶、彩頭酥等。</p>
+                                <img class="d-block mx-auto" src="./img/a5-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-dark">
+                        <a class="accordion-header accordion-button collapsed text-white bg-dark border"
+                            data-bs-toggle="collapse" href="#foodTxt5">麵線糊</a>
+                        <div id="foodTxt5" class="accordion-collapse collapse" data-bs-parent="#foodMenu">
+                            <div class="accordion-body text-white">
+                                <p>　　全省各地都有蚵仔麵線、大腸麵線，而鹿港本地特有的吃法，麵線黏糊且麵線又短，只能用湯匙來舀，筷子是夾不起來的。放的料不是大腸或蚵，就是小肉塊、蛋和蝦米，滋味別具一番風味。
+                                    　　鹿港地區麵線糊用的麵線是紅麵線，因為紅麵線是純手工的，而白麵線是用機器製成的。麵線一定要細要短才能芶芡，芶芡比例要視情況而定，還有勾芡用的太白粉是荷蘭製的太白粉，蝦米也很重要，一定要新鮮的蝦米才能夠下鍋。
+                                </p>
+                                <img class="d-block mx-auto" src="./img/a5-5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- area-05 -->
+            <section class="pt-5 text-light">
+                <header class="container text-center">
+                    <h4>聯絡我們</h4>
+                </header>
+                <article class="container py-5">
+                    <div class="col-12 col-md-6">
+                        <input class="form-control" placeholder="姓名">
+                        <br>
+                        <input class="form-control" placeholder="連絡電話">
+                        <br>
+                        <input class="form-control" placeholder="電子信箱">
+                    </div>
+                    <div class="col-12 col-md-6">
+
+                    </div>
+                    <div class="col-12">
+                        <br>
+                        <textarea class="form-control" placeholder="需求說明"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <hr class="border-danger">
+                        <button type="submit" class="btn btn-primary">確認送出</button>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- footer-->
+        <footer class="bg-dark text-muted py-3 text-center">
+            <!-- <small>footer</small> -->
+            <div><a class="button" href="#area-01">TOP</a></div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+            integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(document).ready(() => {
+                $('.carousel').carousel({
+                    interval: 2000,
+                })
+            })
+        </script>
+
+        <div class="d-flex justify-content-center">
+            <div style="width: 50%;background: #Fff;">
+                <header style="background: #008069;">
+                    <div class="text-center fs-5 p-2" style="color: #Fff;font-weight: 600;">彰化縣都市計畫公園清單</div>
+                </header>
+                <table class="table" id="example">
+                    <thead>
+                        <tr>
+                            <th class="col-1 p-1 ">序號</th>
+                            <th class="col-2 p-1 ">名稱</th>
+                            <th class="col-2 p-1 ">地圖下載</th>
+                            <th class="col-7 p-1 ">路線規劃</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+            integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+        <script>
+            $(function () {
+                const myTbody = $('#myTbody');
+                $.ajax({
+                    url: "ajax.json",
+                    type: "get",
+                    dataType: 'json',
+                    success: function (res) {
+                        $.each(res.slice(0, 22), function (key, value) {
+                            // console.log(key);
+                            // console.log(value);
+                            let textContext =
+                                `
+                                <tr>
+                                    <td>${key + 1}</td>
+                                    <td>${value.名稱}</td>
+                                    <td><a href="${value.圖片連結}" target="_blank"><img src="${value.圖片連結}" alt="nodata" style="width:100px;height: 100px;""></a></td>
+                                    <td>${value.路線規劃}</td>
+                                </tr>
+                                `;
+                            myTbody.append(textContext);
+                        });
+                        $('#example').DataTable({
+                            language: {
+                                "lengthMenu": "顯示 _MENU_ 筆資料",
+                                "sProcessing": "處理中...",
+                                "sZeroRecords": "没有匹配结果",
+                                "sInfo": "目前有 _MAX_ 筆資料",
+                                "sInfoEmpty": "目前共有 0 筆紀錄",
+                                "sInfoFiltered": " ",
+                                "sInfoPostFix": "",
+                                "sSearch": "搜尋:",
+                                "sUrl": "",
+                                "sEmptyTable": "尚未有資料紀錄存在",
+                                "sLoadingRecords": "載入資料中...",
+                                "sInfoThousands": ",",
+                                "oPaginate": {
+                                    "sFirst": "首頁",
+                                    "sPrevious": "上一頁",
+                                    "sNext": "下一頁",
+                                    "sLast": "末頁"
+                                },
+                                "order": [
+                                    [0, "desc"]
+                                ],
+                                "oAria": {
+                                    "sSortAscending": ": 以升序排列此列",
+                                    "sSortDescending": ": 以降序排列此列"
+                                }
+                            },
+
+                        });
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>
